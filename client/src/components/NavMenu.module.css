@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&display=swap');
+
+.container {
+  margin-left: auto;
+  position: fixed;
+  z-index: 2;
+  right: -240px;
+  background-color: #353f47;
+  width: 240px;
+  z-index: 1000000000;
+  padding: 20px;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  transition: right .1s ease-in-out;
+}
+
+.menuOpened {
+  right: 0;
+}
+
+.menu {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.menu .link {
+  text-decoration: none;
+  list-style: none;
+  color: #FFF;
+  position: relative;
+  display: block;
+  font-size: 22px;
+  margin-top: 14px;
+  padding: 3px 0;
+  clear: both;
+  float: left;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: rgb(224, 146, 56);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.close {
+  color: #FFF;
+  font-size: 40px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.close:hover {
+  color:rgb(224, 146, 56);
+}

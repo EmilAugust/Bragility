@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&display=swap');
+
+.container {
+  background-color: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 24px 15%;
+}
+
+.question {
+  cursor: pointer;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+}
+
+.content p {
+  margin: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .2s cubic-bezier(0,1,0,1);
+}
+
+.content.show {
+  max-height: 9999px;
+  transition: all .2s cubic-bezier(1,0,1,0);
+}
+
+.plusIcon {
+  font-size: 28px;
+  transition: .2s;
+}
+
+.plusIcon.xIcon {
+  transform: rotate(135deg);
+}
