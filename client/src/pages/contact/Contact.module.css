@@ -10,10 +10,6 @@
   width: 400px;
 }
 
-.form *:not(.input1, .input2) {
-  display: block;
-}
-
 .contact h1 {
   color: black;
   font-size: 38px;
@@ -35,16 +31,17 @@
   border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
   width: 100%;
-  padding: 5px;
+  padding: 8px;
   color: black;
   font-size: 14px;
   font-family: Arial;
   transition: .2s;
+  margin-top: 4px;
 }
 
 
 .field {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .contactForm input:focus, .contactForm textarea:focus {
@@ -58,11 +55,12 @@
   border-radius: 4px;
   width: 100%;
   min-height: 100px;
-  padding: 5px;
+  padding: 8px;
   color: black;
   font-size: 14px;
   font-family: Arial;
   transition: border .2s;
+  margin-top: 4px;
   resize: vertical;
 }
 
@@ -81,7 +79,7 @@
   letter-spacing: .12em;
   background-color: white;
   cursor: pointer;
-  margin-top: 24px;
+  margin-top: 8px;
   outline: none;
 }
 
