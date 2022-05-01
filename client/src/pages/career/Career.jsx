@@ -27,6 +27,30 @@ function Career() {
               cloud services.
             </p>
           </div>
+          <div className={classes.card}>
+            <h1>Devloper</h1>
+            <p>
+              We will strengthen Intility within a number of different
+              technologies and languages throughout the development stack, and
+              are now looking for more developers who are passionate about
+              technology and love to program. As a developer in Intility, you
+              will enter a strong professional environment and work closely with
+              the rest of the development teams and you will build tomorrow's
+              cloud services.
+            </p>
+          </div>
+          <div className={classes.card}>
+            <h1>Devloper</h1>
+            <p>
+              We will strengthen Intility within a number of different
+              technologies and languages throughout the development stack, and
+              are now looking for more developers who are passionate about
+              technology and love to program. As a developer in Intility, you
+              will enter a strong professional environment and work closely with
+              the rest of the development teams and you will build tomorrow's
+              cloud services.
+            </p>
+          </div>
         </div>
     </div>
   );
