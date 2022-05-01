@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "I have a techinal issue, how do I fix it?",
     answer:
-      "Please contact out customer support so we can resolve the issue.",
+      "Please contact our customer support so we can resolve the issue.",
   },
   {
     question: "I forgot my password, how do I reset it?",

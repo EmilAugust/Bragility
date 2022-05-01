@@ -28,11 +28,11 @@ function Contact() {
   }
 
   return (
-    <div>
+    <div className={classes.contact}>
       <Navbar class="blueBackground" />
+      <h1>Contact Form</h1>
       <div className={classes.contactForm}>
         <form className={classes.form} autoComplete="on" onSubmit={submitHandler}>
-          <h1>Contact Form</h1>
           <div className={classes.field}>
             <label>First Name</label>
             <input
