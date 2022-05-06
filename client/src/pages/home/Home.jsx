@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 function Home() {
   return (
-    <div className={classes.home}>
+    <div className={classes.home}  alt={"Background image of mountains"}>
       <div className={classes.background}>
         <Navbar/>
         <div className={classes.header}>

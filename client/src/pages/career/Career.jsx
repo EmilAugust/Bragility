@@ -33,10 +33,10 @@ function Career() {
           <div className={classes.cardContent}>
             <h1>Devloper</h1>
             <p>
-              We will strengthen Intility within a number of different
+              We will strengthen Bragility within a number of different
               technologies and languages throughout the development stack, and
               are now looking for more developers who are passionate about
-              technology and love to program. As a developer in Intility, you
+              technology and love to program. As a developer in Bragility, you
               will enter a strong professional environment and work closely with
               the rest of the development teams and you will build tomorrow's
               cloud services.

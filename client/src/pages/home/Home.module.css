@@ -66,6 +66,11 @@ html {
   cursor: pointer;
   display: block;
   text-align: center;
+  transition: .2s;
+}
+
+.arrowDown:hover {
+  color:rgb(224, 146, 56);
 }
 
 .content {
@@ -83,7 +88,7 @@ html {
 
 .content h1, .content p {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
   font-family: 'Inter', sans-serif;
   color: #000;
 }
@@ -94,6 +99,6 @@ html {
 
 .content p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 30px;
 }
 

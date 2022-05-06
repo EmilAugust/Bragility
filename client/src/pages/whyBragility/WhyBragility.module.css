@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap');
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3),
+                       rgba(0, 0, 0, 0.3)), url("../../images/city.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+.headerContainer {
+  width: 55%;
+  padding: 20px;
+}
+
+.header h1, .header p {
+  font-family: 'Inter', sans-serif;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 4px rgb(0 0 0 / 80%);
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+.arrowDown {
+  margin-bottom: 60px;
+  font-size: 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  transition: .2s;
+}
+
+.arrowDown:hover {
+  color:rgb(224, 146, 56);
+}
+
+.content {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.aboutBragility {
+  margin: 100px 20% 0px 20%;
+  text-align: center;
+}
+
+.content h1, .content p {
+  display: block;
+  margin-bottom: 26px;
+  font-family: 'Inter', sans-serif;
+  color: #000;
+}
+
+.content h1 {
+  font-size: 32px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
