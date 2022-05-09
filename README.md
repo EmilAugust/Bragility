@@ -1,6 +1,7 @@
 # Bragility
 
 ## Innholdsfortegnelse
+
 * [General info](#om-prosjektet)
 * [Teknologier](#teknologier)
 * [Setup](#setup)
