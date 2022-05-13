@@ -11,6 +11,7 @@ function Contact() {
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState();
 
+  //Posts all the data to the server which stores it in a database
   function submitHandler() {
     Axios.post("http://localhost:3001/sendMessage", {
       firstName: firstName,

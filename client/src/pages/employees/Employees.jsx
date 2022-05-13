@@ -8,6 +8,7 @@ import EmployeesCard from "./EmployeesCard";
 function Employees() {
   const [employeesData, setEmployeesData] = useState([]);
 
+  //When component mounts, it will get all the employees from the server which gets it from a database.
   useEffect(() => {
     const employees = {
       method: "GET",

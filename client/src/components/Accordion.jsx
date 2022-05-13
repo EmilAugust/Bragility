@@ -6,6 +6,7 @@ import { AiOutlinePlus } from 'react-icons/ai'
 function Accordion(props) {
   const [selected, setSelected] = useState(null);
 
+  //Toggles the accordion on and off. The i parameter is the index of the accordion that has been clicked. If it is selected then it will close, otherwise it will open.
   const toggle = (i) => {
     if (selected === i) {
       return setSelected(null)

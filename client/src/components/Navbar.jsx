@@ -10,10 +10,12 @@ function Navbar(props) {
   const { width } = useWindowDimensions();
   const [isOpen, setIsOpen] = useState(false);
 
+  //Open sidemenu
   function openHandler() {
     setIsOpen(true);
   }
 
+  //Close sidemenu
   function closeHandler() {
     setIsOpen(false)
   }
