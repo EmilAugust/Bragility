@@ -15,21 +15,18 @@ const db = mysql.createConnection({
   database: "bragility",
 });
 
-//Get employees
+//Gets employees from MySQL database. Takes in reqest and response as arguments. Request isn't used becasue no information from the frontend is passed in. Response is used to send all the employee data back to the frontend.
 app.get("/getEmployees", (req, res) => {
-  db.query(
-    "SELECT * FROM employees",
-    (err, result) => {
-      if (err) {
-        console.log(err);
-      } else {
-        res.send(result);
-      }
+  db.query("SELECT * FROM employees", (err, result) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.send(result);
     }
-  );
+  });
 });
 
-//Send message
+//Send message. Takes in request and response as parameters. Request is the form data that the user inputted, and response is used to send a response back.
 app.post("/sendMessage", (req, res) => {
   const firstName = req.body.firstName;
   const lastName = req.body.lastName;
@@ -37,17 +34,18 @@ app.post("/sendMessage", (req, res) => {
   const subject = req.body.subject;
   const message = req.body.message;
 
-  let messageSent = false
+  let messageSent = false;
 
+  //Saves data in MySQL database
   db.query(
     "INSERT INTO messages (firstName, lastName, email, subject, message) VALUES (?,?,?,?,?)",
     [firstName, lastName, email, subject, message],
     (err, result) => {
       if (err) {
         console.log(err);
-        messageSent = false
+        messageSent = false;
       } else {
-        messageSent = true
+        messageSent = true;
       }
       res.send(messageSent);
     }

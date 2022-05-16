@@ -5,13 +5,14 @@ import { useState } from "react";
 import Axios from "axios";
 
 function Contact() {
+  //Initialize all states
   const [firstName, setFirstName] = useState();
   const [lastName, setLastName] = useState();
   const [email, setEmail] = useState();
   const [subject, setSubject] = useState();
   const [message, setMessage] = useState();
 
-  //Posts all the data to the server which stores it in a database
+  //Posts all the data to the server which stores it in a database.
   function submitHandler() {
     Axios.post("http://localhost:3001/sendMessage", {
       firstName: firstName,
@@ -20,6 +21,7 @@ function Contact() {
       subject: subject,
       message: message,
     }).then((response) => {
+      //Handles response from server
       if (response.data === true) {
         alert("Message sent");
       } else {

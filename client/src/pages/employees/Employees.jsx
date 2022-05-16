@@ -14,7 +14,9 @@ function Employees() {
       method: "GET",
       url: "http://localhost:3001/getEmployees",
     };
+    //Sends request to server to get the employees from the database, and handles the data.
     axios.request(employees).then((response) => {
+      //Sets employeesData state to the data from the response
       setEmployeesData(info => {
         return info.concat(response.data);
       })
@@ -25,6 +27,7 @@ function Employees() {
       <Navbar class="blueBackground" />
       <h1 className={classes.employeesHeader}>Employees</h1>
       <div className={classes.container}>
+        {/*Uses map function to display all the employee data as cards. It also edits certain parts of the data to look good on the cards.*/}
         {employeesData && employeesData.map(data => {
           const result = data.department.replace(/([A-Z])/g, " $1");
           const finalResult = result.charAt(0).toUpperCase() + result.slice(1);

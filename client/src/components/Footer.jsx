@@ -7,9 +7,9 @@ function Footer() {
   return (
     <footer className={classes.footer}>
       <div className={`${classes.row} ${classes.socials}`}>
-        <a href="https://www.instagram.com/intility/"><FaInstagram/></a>
-        <a href="https://www.facebook.com/Intility/"><FaFacebookF/></a>
-        <a href="https://www.linkedin.com/company/intility-as"><FaLinkedin/></a>
+        <a href="https://www.instagram.com/intility/" target="_blank" rel="noreferrer noopener"><FaInstagram/></a>
+        <a href="https://www.facebook.com/Intility/" target="_blank" rel="noreferrer noopener"><FaFacebookF/></a>
+        <a href="https://www.linkedin.com/company/intility-as" target="_blank" rel="noreferrer noopener"><FaLinkedin/></a>
       </div>
       <div className={`${classes.row} ${classes.sites}`}>
         <ul>

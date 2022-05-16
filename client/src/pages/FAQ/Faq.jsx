@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Accordion from "../../components/Accordion";
 import classes from "./Faq.module.css";
 
+//Array of FAQs
 const faqs = [
   {
     question: "What does Bragility offer?",
@@ -32,6 +33,7 @@ function Faq() {
       <Navbar class="blueBackground" />
       <h1 className={classes.faqHeader}>Frequently Asked Questions</h1>
       <div className={classes.faq}>
+        {/*Using map function to display the FAQ array as elements*/}
         {faqs.map((faq, i) => (
           <Accordion faq={faq} index={i} />
         ))}

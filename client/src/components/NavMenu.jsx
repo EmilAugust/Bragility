@@ -6,6 +6,7 @@ import {IoArrowForwardCircleOutline} from 'react-icons/io5'
 function NavMenu(props) {
 
   return (
+    /*Sets className of div to menuOpened if isOpen is true which is a prop that gets passed in from the NavBar*/
     <div className={props.isOpen === true ? `${classes.container} ${classes.menuOpened}` : classes.container}>
       <IoArrowForwardCircleOutline className={classes.close} onClick={props.closeHandler}/>
       <div className={classes.menu}>
