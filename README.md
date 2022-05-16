@@ -2,7 +2,7 @@
 
 ## Innholdsfortegnelse
 
-* [General info](#om-prosjektet)
+* [Om prosjektet](#om-prosjektet)
 * [Teknologier](#teknologier)
 * [Setup](#setup)
 
